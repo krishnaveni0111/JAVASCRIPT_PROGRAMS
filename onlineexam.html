@@ -1,0 +1,192 @@
+<html>
+
+    <head>
+
+        <title>
+
+            Online exam
+
+        </title>
+
+        <style>
+
+            label
+
+            {
+
+                font-size: 20px;
+
+                font-weight: bold;
+
+            }
+
+            h1
+
+            {
+
+                font-size: 40px;
+
+            }
+
+            input[type=radio]
+
+            {
+
+                padding:10px 30px;
+
+                border-radius: 8px;
+
+                margin-left: 50px;;
+
+                font-size: 15px;
+
+            }
+
+            input[type=submit]
+
+            {
+
+                background-color: red;
+
+                color:white;
+
+                padding:10px 30px;
+
+                
+
+                border-radius: 8px;
+
+                font-size: 15px;
+
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div style="margin: 0px 350px 0px 350px;">
+
+            <center><h1>Online Test</h1></center>
+
+            <form name="test">
+
+                <label>QN1.'OS' computer abbreviation usually means?.</label><br>
+
+                <input type="radio" name="qn1" value="qn1an1">Order of significance<br>
+
+                <input type="radio" name="qn1" value="qn1an2">Open Software<br>
+
+                <input type="radio" name="qn1" id="an1" value="qn1an3">Operating system<br>
+
+                <input type="radio" name="qn1" value="qn1an4">optical sensor<br><hr>
+
+                <label>QN2.'.MOV' extension refers usually to what kind of file?</label><br>
+
+                <input type="radio" name="qn2" value="qn2an1">Image file<br>
+
+                <input type="radio" name="qn2" value="qn2an2">audio file<br>
+
+                <input type="radio" name="qn2" id="an2"value="qn2an3">Animation/movie file<br>
+
+                <input type="radio" name="qn2" value="qn2an4">MS Office document<br><hr>
+
+                <label>QN3.What is part of a database that holds only one type of information?</label><br>
+
+                <input type="radio" name="qn3" value="qn3an1">Report<br>
+
+                <input type="radio" name="qn3" value="qn3an2">Record<br>
+
+                <input type="radio" name="qn3" id="an3" value="qn3an3">Field<br>
+
+                <input type="radio" name="qn3" value="qn3an4">File<br><hr>
+
+                <label>QN4.What does SSL  stand for?</label><br>
+
+                <input type="radio" name="qn4" id="an4"value="qn4an1">Secure Socket Layer<br>
+
+                <input type="radio" name="qn4" value="qn4an2">System Socket Layer<br>
+
+                <input type="radio" name="qn4" value="qn4an3">Superuser System Login<br>
+
+                <input type="radio" name="qn4" value="qn4an4">Secure System Login<br><hr>
+
+                <label>QN5.What is a URL?  .</label><br>
+
+                <input type="radio" name="qn5" value="qn5an1">A computer software program<br>
+
+                <input type="radio" name="qn5" value="qn5an2"> A type of UFO<br>
+
+                <input type="radio" name="qn5" id="an5"value="qn5an3">The address of  document or "page" on the World Wide Web<br>
+
+                <input type="radio" name="qn5" value="qn5an4">An acronym for Uniform Resources Learning <br><br>
+
+                <div style="margin-left: 350px;">
+
+                    <input type="submit" onclick="result()" name="submit">
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <script>
+
+                function result()
+
+                {
+
+                    var score=0;
+
+                    if(document.getElementById('an1').checked)
+
+                    {
+
+                        score+=1;
+
+                    }
+
+                    if(document.getElementById('an2').checked)
+
+                    {
+
+                        score+=1;
+
+                    }
+
+                    if(document.getElementById('an3').checked)
+
+                    {
+
+                        score+=1;
+
+                    }
+
+                    if(document.getElementById('an4').checked)
+
+                    {
+
+                        score+=1;
+
+                    }
+
+                    if(document.getElementById('an5').checked)
+
+                    {
+
+                        score+=1;
+
+                    }
+
+                    alert("Score is "+score);
+
+                }
+
+        </script>
+
+    </body>
+
+</html>
+
